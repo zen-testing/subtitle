@@ -34,7 +34,7 @@ jobs:
           pip install openai-whisper
       - name: generate
         run: |
-          whisper 712.opus --model medium --model_dir ./ --output_format srt --prepend_punctuations ,.? --language Japanese --output_dir ./ --verbose True
+          whisper 712.opus --model small --model_dir ./ --output_format srt --prepend_punctuations ,.? --language Japanese --output_dir ./ --verbose True
       - name: saveSpace
         run: rm -rf /opt/hostedtoolcache
       - name: Upload
